@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.svillanueva.springboot.microserviciositem.models.Item;
-import com.svillanueva.springboot.microserviciositem.models.services.ItemService;
+import com.svillanueva.springboot.microserviciositem.services.ItemService;
 
 @RestController
 @RequestMapping("/api/item")

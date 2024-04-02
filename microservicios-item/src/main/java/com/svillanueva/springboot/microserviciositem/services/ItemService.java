@@ -1,4 +1,4 @@
-package com.svillanueva.springboot.microserviciositem.models.services;
+package com.svillanueva.springboot.microserviciositem.services;
 
 import java.util.List;
 
