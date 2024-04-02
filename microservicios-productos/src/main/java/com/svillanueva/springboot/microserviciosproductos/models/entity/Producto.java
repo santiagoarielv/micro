@@ -19,7 +19,7 @@ public class Producto implements Serializable {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String precio;
+  private Double precio;
   private String nombre;
 
   @Column(name = "create_at")
@@ -34,11 +34,11 @@ public class Producto implements Serializable {
     this.id = id;
   }
 
-  public String getPrecio() {
+  public Double getPrecio() {
     return precio;
   }
 
-  public void setPrecio(String precio) {
+  public void setPrecio(Double precio) {
     this.precio = precio;
   }
 
