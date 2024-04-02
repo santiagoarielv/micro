@@ -2,15 +2,14 @@ package com.svillanueva.springboot.microserviciositem.clientes;
 
 import java.util.List;
 
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.svillanueva.springboot.microserviciositem.models.Producto;
 
-@FeignClient(name = "servicio-producto"/* , url = "${servicio-producto.ribbon.listOfServers}" */, path = "api/productos")
-@RibbonClient(name = "servicio-producto")
+@FeignClient("servicio-producto"/* , url = "${servicio-producto.ribbon.listOfServers}" */
+/* , path = "api/productos" */)
 public interface ProductoClienteRest {
   @GetMapping
   List<Producto> findByAll();
