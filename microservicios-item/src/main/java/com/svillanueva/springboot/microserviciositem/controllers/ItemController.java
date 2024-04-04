@@ -1,8 +1,11 @@
 package com.svillanueva.springboot.microserviciositem.controllers;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +22,10 @@ public class ItemController {
   private ItemService itemService;
 
   @GetMapping
-  public List<Item> findAll() {
-    return itemService.findAll();
+  public Map<String, Object> findAll() {
+    HashMap<String, Object> body = new HashMap<>();
+    body.put("items", itemService.findAll());
+    return body;
   }
 
   @GetMapping("/{id}/{cantidad}")

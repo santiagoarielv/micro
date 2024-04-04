@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.svillanueva.springboot.microserviciositem.models.Producto;
 
-@FeignClient(name = "servicio-producto", url = "localhost:8081", path = "api/productos")
+@FeignClient(name = "servicio-producto", path = "api/productos")
 public interface ProductoClienteRest {
   @GetMapping
   List<Producto> findByAll();
