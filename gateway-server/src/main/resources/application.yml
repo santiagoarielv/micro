@@ -8,6 +8,13 @@ spring:
             - Path=/v2/**
           filters:
             - StripPrefix=1
+            # - FiltroEjemplo=MENSAJE PERSONALIZADO, usuario, santiago
+            - EjemploCookie=MENSAJE PERSONALIZADO, usuario, santiago
+            # - name: FiltroEjemplo
+            #   args:
+            # mensaje: MENSAJE PERSONALIZADO
+            # cookieNombre: usuario
+            # cookieValor: santiago
         - id: servicio-item
           uri: lb://servicio-item
           predicates:
