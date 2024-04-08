@@ -1,6 +1,7 @@
 package com.svillanueva.springboot.microserviciosproductos.controllers;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,7 +31,13 @@ public class ProductoController {
   }
 
   @GetMapping("/{id}")
-  public Producto findById(@PathVariable Long id) {
+  public Producto findById(@PathVariable Long id) throws InterruptedException {
+    if (id.equals(10L)) {
+      throw new IllegalStateException("Producto no encontrado");
+    } else if (id.equals(7L)) {
+      TimeUnit.SECONDS.sleep(5L);
+    }
+
     Producto producto = productoService.findById(id);
     producto.setPort(Integer.parseInt(port));
     return producto;
