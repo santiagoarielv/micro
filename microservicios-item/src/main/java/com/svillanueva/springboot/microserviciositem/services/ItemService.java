@@ -2,8 +2,8 @@ package com.svillanueva.springboot.microserviciositem.services;
 
 import java.util.List;
 
+import com.svillanueva.springboot.app.commons.models.entity.Producto;
 import com.svillanueva.springboot.microserviciositem.models.Item;
-import com.svillanueva.springboot.microserviciositem.models.Producto;
 
 public interface ItemService {
 

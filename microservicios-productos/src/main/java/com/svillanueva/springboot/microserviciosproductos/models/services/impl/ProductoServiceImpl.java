@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.svillanueva.springboot.microserviciosproductos.models.dao.ProductoRepository;
-import com.svillanueva.springboot.microserviciosproductos.models.entity.Producto;
+import com.svillanueva.springboot.app.commons.models.entity.Producto;
 import com.svillanueva.springboot.microserviciosproductos.models.services.ProductoService;
 
 @Service

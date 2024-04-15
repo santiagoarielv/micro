@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.svillanueva.springboot.microserviciosproductos.models.entity.Producto;
+import com.svillanueva.springboot.app.commons.models.entity.Producto;
 import com.svillanueva.springboot.microserviciosproductos.models.services.ProductoService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

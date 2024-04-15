@@ -11,8 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.svillanueva.springboot.microserviciositem.models.Item;
-import com.svillanueva.springboot.microserviciositem.models.Producto;
+import com.svillanueva.springboot.microserviciositem.models.Item;com.svillanueva.springboot.app.commons.models.entity.Producto;
 import com.svillanueva.springboot.microserviciositem.services.ItemService;
 
 @Service

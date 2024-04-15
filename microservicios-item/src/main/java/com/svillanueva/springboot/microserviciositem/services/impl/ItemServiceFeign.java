@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.svillanueva.springboot.microserviciositem.clientes.ProductoClienteRest;
-import com.svillanueva.springboot.microserviciositem.models.Item;
-import com.svillanueva.springboot.microserviciositem.models.Producto;
+import com.svillanueva.springboot.microserviciositem.models.Item;com.svillanueva.springboot.app.commons.models.entity.Producto;
 import com.svillanueva.springboot.microserviciositem.services.ItemService;
 
 @Service
