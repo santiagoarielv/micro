@@ -22,6 +22,7 @@
     <module>gateway-server</module>
     <module>config-server</module>
     <module>commons</module>
+    <module>microservicios-usuarios</module>
   </modules>
   <properties>
     <java.version>17</java.version>
