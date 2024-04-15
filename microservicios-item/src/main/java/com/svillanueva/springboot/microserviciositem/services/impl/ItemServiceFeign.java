@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.svillanueva.springboot.microserviciositem.clientes.ProductoClienteRest;
 import com.svillanueva.springboot.microserviciositem.models.Item;
+import com.svillanueva.springboot.microserviciositem.models.Producto;
 import com.svillanueva.springboot.microserviciositem.services.ItemService;
 
 @Service
@@ -26,6 +27,21 @@ public class ItemServiceFeign implements ItemService {
   @Override
   public Item findById(Long id, Integer cantidad) {
     return new Item(clienteFeign.findById(id), cantidad);
+  }
+
+  @Override
+  public void deleteById(Long id) {
+    clienteFeign.deleteById(id);
+  }
+
+  @Override
+  public Producto save(Producto producto) {
+    return clienteFeign.save(producto);
+  }
+
+  @Override
+  public Producto update(Producto producto, Long id) {
+    return clienteFeign.update(producto, id);
   }
 
 }
