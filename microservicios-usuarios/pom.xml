@@ -19,6 +19,15 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>com.svillanueva.springboot.app</groupId>
+			<artifactId>usuarios-commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
